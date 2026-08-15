@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "description": "Novoforge — landing page and docs (GitHub Pages)",
+  "packageManager": "pnpm@11.5.0",
   "type": "module",
   "scripts": {
     "dev": "astro dev",
