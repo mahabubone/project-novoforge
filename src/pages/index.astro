@@ -1,0 +1,102 @@
+---
+import Base from "../layouts/Base.astro";
+---
+
+<Base title="Novoforge — worldbuilding & novel-writing software">
+  <section class="hero">
+    <img class="logo" src={import.meta.env.BASE_URL + "favicon.svg"} alt="Novoforge" />
+    <h1>Novoforge</h1>
+    <p class="tagline">
+      Local-first worldbuilding and long-form writing software. No accounts, no
+      cloud — your project is a folder on disk, and everything lives next to
+      it.
+    </p>
+    <div class="buttons">
+      <a class="btn primary" href="https://github.com/mahabubone/project-novoforge/releases/latest">
+        Download for Linux
+      </a>
+      <a class="btn" href="https://github.com/mahabubone/project-novoforge/releases/latest">
+        Download for Windows
+      </a>
+      <a class="btn" href={import.meta.env.BASE_URL + "install/"}>Install guide</a>
+    </div>
+    <p class="platforms">Linux (AppImage · deb · rpm) · Windows (NSIS) · macOS coming later</p>
+  </section>
+
+  <section class="features">
+    <div class="feature">
+      <h3>Manuscript</h3>
+      <p>
+        Books, parts, chapters and scenes with a distraction-free editor,
+        focus mode, typewriter scrolling, scrivenings view and per-scene word
+        targets.
+      </p>
+    </div>
+    <div class="feature">
+      <h3>Worldbuilding</h3>
+      <p>
+        Typed entities — characters, locations, factions — with custom
+        attributes, tags, relationship graphs, timelines, calendars and family
+        trees.
+      </p>
+    </div>
+    <div class="feature">
+      <h3>History &amp; safety</h3>
+      <p>
+        Revision snapshots with diff viewing and restore, rolling auto-backup,
+        and scheduled encrypted archives to a local folder or Dropbox.
+      </p>
+    </div>
+    <div class="feature">
+      <h3>Export</h3>
+      <p>
+        DOCX, EPUB, RTF, ODT, PDF, Markdown, HTML and Shunn-standard
+        manuscript — each with a checksummed manifest for round-trip
+        verification.
+      </p>
+    </div>
+    <div class="feature">
+      <h3>Consistency workbench</h3>
+      <p>
+        Continuity scans across your manuscript and world data, with Markdown
+        reports and beta-reader exports.
+      </p>
+    </div>
+    <div class="feature">
+      <h3>Local-first</h3>
+      <p>
+        Projects are portable folders. Open them, back them up, sync them
+        however you like — they're yours.
+      </p>
+    </div>
+  </section>
+
+  <section class="screens">
+    <div class="gallery">
+      <figure>
+        <img src={import.meta.env.BASE_URL + "screens/manuscript.png"} alt="Manuscript editor with outline, scrivenings and per-scene targets" loading="lazy" />
+        <figcaption>Manuscript — outline, editor and inspector</figcaption>
+      </figure>
+      <figure>
+        <img src={import.meta.env.BASE_URL + "screens/world.png"} alt="Worldbuilding entity editor" loading="lazy" />
+        <figcaption>Worldbuilding — typed entities and custom attributes</figcaption>
+      </figure>
+      <figure>
+        <img src={import.meta.env.BASE_URL + "screens/graph.png"} alt="Relationship graph between characters and locations" loading="lazy" />
+        <figcaption>Relationship graph</figcaption>
+      </figure>
+      <figure>
+        <img src={import.meta.env.BASE_URL + "screens/stats.png"} alt="Writing stats dashboard" loading="lazy" />
+        <figcaption>Stats — words per day, streaks and targets</figcaption>
+      </figure>
+      <figure>
+        <img src={import.meta.env.BASE_URL + "screens/boards.png"} alt="Planning boards" loading="lazy" />
+        <figcaption>Boards — plan scenes and chapters</figcaption>
+      </figure>
+      <figure>
+        <img src={import.meta.env.BASE_URL + "screens/backups.png"} alt="Backup settings with Dropbox" loading="lazy" />
+        <figcaption>Backups — local or Dropbox, encrypted</figcaption>
+      </figure>
+    </div>
+  </section>
+</Base>
