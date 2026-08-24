@@ -1,7 +1,7 @@
 ---
 layout: ../layouts/Base.astro
 title: License — Novoforge
-docs: true
+description: Novoforge is free for personal, non-commercial use by individuals. Commercial use, organizational use, modification, and redistribution require written permission.
 ---
 
 # License
