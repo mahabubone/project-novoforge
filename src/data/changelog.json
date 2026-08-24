@@ -1,5 +1,14 @@
 [
   {
+    "version": "v1.0.0-beta.2",
+    "date": "2026-08-24",
+    "features": [
+      "enable macOS DMG builds + fix app icon"
+    ],
+    "fixes": [],
+    "improvements": []
+  },
+  {
     "version": "v1.0.0-beta.1",
     "date": "2026-08-24",
     "features": [
