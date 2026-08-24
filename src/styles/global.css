@@ -278,6 +278,114 @@ nav.site a.nav-download::before {
   mask-size: contain;
 }
 
+/* Changelog */
+.changelog {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 60px 0 90px;
+}
+
+.changelog-head {
+  margin-bottom: 50px;
+}
+
+.changelog-head h1 {
+  font-size: clamp(32px, 5vw, 48px);
+  margin: 0 0 10px;
+  letter-spacing: -0.02em;
+}
+
+.changelog-head p {
+  color: var(--muted);
+  font-size: 17px;
+  margin: 0;
+}
+
+.version-block {
+  border: 1px solid var(--edge);
+  border-radius: var(--radius);
+  padding: 28px 30px;
+  margin-bottom: 22px;
+  background: var(--panel);
+}
+
+.version-head {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.version-badge {
+  font-family: "Fraunces", serif;
+  font-weight: 600;
+  font-size: 22px;
+  color: var(--accent-strong);
+  letter-spacing: -0.01em;
+}
+
+.version-head time {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.entry-group {
+  margin-top: 16px;
+}
+
+.entry-title {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0 0 10px;
+  padding-left: 16px;
+  position: relative;
+}
+
+.entry-title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.entry-title.new::before {
+  background: #10b981;
+}
+
+.entry-title.improved::before {
+  background: var(--accent);
+}
+
+.entry-title.fixed::before {
+  background: #ef4444;
+}
+
+.entry-group ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.entry-group li {
+  font-size: 14.5px;
+  line-height: 1.7;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+
+.empty {
+  color: var(--muted);
+  font-size: 14px;
+  font-style: italic;
+  margin: 0;
+}
+
 .btn {
   display: inline-block;
   padding: 12px 22px;

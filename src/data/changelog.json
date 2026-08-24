@@ -1,0 +1,107 @@
+[
+  {
+    "version": "v1.0.0-beta.1",
+    "date": "2026-08-24",
+    "features": [
+      "native application menu, About/Shortcuts/What's New dialogs, quit-path hardening (independent steps + GPU-off + diagnostics)",
+      "compile engine v2 (per-section layouts/filters) + trim targets to md/docx/shunn/scriv/html/pdf/epub",
+      "corkboard/outliner views, find & replace, scene breaks, section types + migrations 0012-0013"
+    ],
+    "fixes": [],
+    "improvements": []
+  },
+  {
+    "version": "v0.1.8",
+    "date": "2026-08-18",
+    "features": [
+      "home button + default project location, app icon from website logo, fix crash on project close"
+    ],
+    "fixes": [],
+    "improvements": []
+  },
+  {
+    "version": "v0.1.7",
+    "date": "2026-08-18",
+    "features": [],
+    "fixes": [
+      "board edit/delete/resize + rename, prompt dialog bridge, updater download, manuscript expand-on-create"
+    ],
+    "improvements": []
+  },
+  {
+    "version": "v0.1.5",
+    "date": "2026-08-16",
+    "features": [],
+    "fixes": [
+      "rename button visible + dialog bridge + onRenamePart fix"
+    ],
+    "improvements": []
+  },
+  {
+    "version": "v0.1.4",
+    "date": "2026-08-16",
+    "features": [],
+    "fixes": [
+      "remove non-existent app-update.yml from release upload globs",
+      "auto-updater reliability — align publish feed, periodic + on-focus recheck"
+    ],
+    "improvements": []
+  },
+  {
+    "version": "v0.1.3",
+    "date": "2026-08-16",
+    "features": [],
+    "fixes": [
+      "manuscript book/chapter rename UI, board crash (#185), Dropbox token refresh & connection state"
+    ],
+    "improvements": []
+  },
+  {
+    "version": "v0.1.2",
+    "date": "2026-08-16",
+    "features": [],
+    "fixes": [],
+    "improvements": []
+  },
+  {
+    "version": "v0.1.1",
+    "date": "2026-08-15",
+    "features": [
+      "auto-update feed points at GitHub Releases (private repo; GH_TOKEN required)"
+    ],
+    "fixes": [],
+    "improvements": []
+  },
+  {
+    "version": "v0.1.0",
+    "date": "2026-08-15",
+    "features": [
+      "Dropbox cloud backups via OAuth PKCE + verified live",
+      "complete Phase 5/7 — full export suite (DOCX/EPUB/RTF/ODT/PDF), staged imports (DOCX/TXT/MD/Fountain/CSV), S3 cloud backups + consistency scene matrix/PDF report",
+      "Phase 7 — consistency workbench (continuity scan, Markdown report + beta-reader exports)",
+      "Phase 6 completion — performance (virtualized entity list, memoized outline) + auto-updater (electron-builder packaging, update banner)",
+      "resizable manuscript panels with persisted widths (Phase 6 layouts)",
+      "Phase 6 — project templates (novel/anthology/shared world), editor typography settings, ⌘S save + shortcut catalog",
+      "Phase 6 — recent projects + auto-open, dark/light themes, command palette, stats dashboard",
+      "Phase 5 — backup & export (forgebackup archives, local folder provider, scheduler, Markdown/JSON/HTML/Shunn exports)",
+      "Phase 4 — revision history engine, diff viewer, restore with safety backup, auto-backup on close",
+      "Phase 3 — family trees view + series manager",
+      "Phase 3 — fictional calendar engine with date arithmetic",
+      "Phase 3 — plot boards with outline templates",
+      "Phase 3 — map viewer with markers",
+      "Phase 3 — timeline view",
+      "Phase 3 — relationship graph (xyflow)",
+      "Phase 2 — name generator + CSV entity import",
+      "Phase 2 — per-type field templates",
+      "Phase 2 — asset import, entity gallery, avatars",
+      "Phase 2 — wiki-link autocomplete and scene backlinks",
+      "Phase 2 — entity CRUD, flexible attributes, tags, world page",
+      "Phase 1 — manuscript editor, search, targets, focus & scrivenings",
+      "scaffold Novoforge Phase 0 foundation"
+    ],
+    "fixes": [
+      "close PLAN.md audit gaps — crash recovery, import revisions, inline notes, POV picker, session history, prefs in settings, shortcuts catalog, export integrity, series multi-select; nested-transaction savepoints (bugfix: manuscript imports previously threw)"
+    ],
+    "improvements": []
+  }
+]
