@@ -184,11 +184,11 @@ main {
   letter-spacing: -0.02em;
 }
 
-.features {
+.feature-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 18px;
-  padding: 40px 0 60px;
+  margin-top: 30px;
 }
 
 .feature {
@@ -432,11 +432,20 @@ nav.site a.nav-download::before {
   padding-left: 14px;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 .features {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 16px;
-  padding: 30px 0 70px;
+  padding: 40px 0 60px;
 }
 
 .feature {

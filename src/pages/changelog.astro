@@ -3,7 +3,19 @@ import Base from "../layouts/Base.astro";
 import changelog from "../data/changelog.json";
 ---
 
-<Base title="Changelog — Novoforge">
+<Base
+  title="Changelog — Novoforge"
+  description="What's new in each Novoforge release. Version history with new features, improvements, and fixes — from v0.1.0 through v1.0.0-beta.1."
+  jsonLd={[
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      name: "Novoforge Changelog",
+      description: "Version history of Novoforge — local-first worldbuilding and novel-writing software.",
+      url: "https://mahabubone.github.io/project-novoforge/changelog/",
+    },
+  ]}
+>
   <section class="changelog">
     <header class="changelog-head">
       <h1>Changelog</h1>
@@ -12,10 +24,10 @@ import changelog from "../data/changelog.json";
 
     {
       changelog.map((v) => (
-        <article class="version-block">
+        <article class="version-block" aria-labelledby={`v-${v.version}`}>
           <div class="version-head">
-            <span class="version-badge">{v.version}</span>
-            <time>{v.date}</time>
+            <span class="version-badge" id={`v-${v.version}`}>{v.version}</span>
+            <time dateTime={v.date}>{v.date}</time>
           </div>
 
           {v.features.length > 0 && (

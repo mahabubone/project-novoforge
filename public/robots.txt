@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mahabubone.github.io/project-novoforge/sitemap.xml
