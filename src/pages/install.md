@@ -1,6 +1,7 @@
 ---
 layout: ../layouts/Base.astro
 title: Install — Novoforge
+docs: true
 description: How to install Novoforge on Linux and Windows. Download AppImage, deb, rpm, or NSIS setup. Works offline, free for personal use.
 ---
 
