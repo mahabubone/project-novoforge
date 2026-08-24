@@ -80,31 +80,24 @@ import Base from "../layouts/Base.astro";
                 Our Features
                 <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14"></path><polyline points="19 12 12 19 5 12"></polyline></svg>
             </a>
-            <div class="split">
-                <a
-                    class="btn primary"
-                    href="https://github.com/mahabubone/project-novoforge/releases/latest"
-                >
+            <details class="dropdown">
+                <summary class="btn primary">
                     <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
                     Download
-                </a>
-                <details class="split-menu">
-                    <summary class="btn primary caret" aria-label="Choose platform to download">
-                        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                    </summary>
-                    <div class="menu">
-                        <a href="https://github.com/mahabubone/project-novoforge/releases/latest">
-                            Linux <span class="sub">AppImage · deb · rpm</span>
-                        </a>
-                        <a href="https://github.com/mahabubone/project-novoforge/releases/latest">
-                            Windows <span class="sub">NSIS installer</span>
-                        </a>
-                        <a href="https://github.com/mahabubone/project-novoforge/releases/latest">
-                            macOS <span class="sub">DMG (unsigned)</span>
-                        </a>
-                    </div>
-                </details>
-            </div>
+                    <svg class="ic chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </summary>
+                <div class="menu">
+                    <a href="https://github.com/mahabubone/project-novoforge/releases/latest">
+                        Linux <span class="sub">AppImage · deb · rpm</span>
+                    </a>
+                    <a href="https://github.com/mahabubone/project-novoforge/releases/latest">
+                        Windows <span class="sub">NSIS installer</span>
+                    </a>
+                    <a href="https://github.com/mahabubone/project-novoforge/releases/latest">
+                        macOS <span class="sub">DMG (unsigned)</span>
+                    </a>
+                </div>
+            </details>
         </div>
         <p class="platforms">
             Linux (AppImage · deb · rpm) · Windows (NSIS) · macOS (DMG)

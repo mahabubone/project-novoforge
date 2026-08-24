@@ -417,54 +417,42 @@ nav.site a.nav-download::before {
   flex-shrink: 0;
 }
 
-.split {
-  display: inline-flex;
-  align-items: stretch;
+.btn .ic.chevron {
+  width: 14px;
+  height: 14px;
+  opacity: 0.7;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown > .btn.primary {
   border-radius: var(--radius);
-  position: relative;
 }
 
-.split .btn.primary:first-child {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  border-right: none;
+.dropdown > .btn.primary:hover {
+  text-decoration: none;
 }
 
-.split .caret {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  border-top-right-radius: var(--radius);
-  border-bottom-right-radius: var(--radius);
-  border-left: 1px solid rgba(245,158,11,0.35);
-  padding: 0 10px;
-  height: 100%;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.split-menu {
-  position: relative;
-}
-
-.split-menu[open] .menu {
+.dropdown[open] .menu {
   display: flex;
 }
 
-.split-menu:not([open]) .menu {
+.dropdown:not([open]) .menu {
   display: none;
 }
 
-.split-menu summary {
+.dropdown summary {
   list-style: none;
   cursor: pointer;
 }
 
-.split-menu summary::-webkit-details-marker {
+.dropdown summary::-webkit-details-marker {
   display: none;
 }
 
-.split-menu .menu {
+.dropdown .menu {
   position: absolute;
   top: calc(100% + 6px);
   right: 0;
@@ -480,7 +468,7 @@ nav.site a.nav-download::before {
   box-shadow: 0 12px 40px rgba(0,0,0,0.45);
 }
 
-.split-menu .menu a {
+.dropdown .menu a {
   display: flex;
   flex-direction: column;
   gap: 1px;
@@ -493,11 +481,11 @@ nav.site a.nav-download::before {
   line-height: 1.3;
 }
 
-.split-menu .menu a:hover {
+.dropdown .menu a:hover {
   background: color-mix(in srgb, var(--accent) 15%, transparent);
 }
 
-.split-menu .menu .sub {
+.dropdown .menu .sub {
   color: var(--muted);
   font-weight: 400;
   font-size: 11px;
