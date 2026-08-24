@@ -16,11 +16,11 @@ const outFile = path.resolve(import.meta.dirname, "../src/data/changelog.json");
 const git = (cmd) =>
   execSync(`git -C "${repoDir}" ${cmd}`, { encoding: "utf8" }).trim();
 
-// Tags sorted newest-first by semver.
+// Tags sorted newest-first by semver. Skip prerelease tags (beta, rc, alpha).
 const tags = git("tag --sort=-v:refname")
   .split("\n")
   .map((t) => t.trim())
-  .filter(Boolean);
+  .filter((t) => t && !/-/.test(t));
 
 const versions = [];
 
