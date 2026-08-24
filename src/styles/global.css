@@ -444,6 +444,14 @@ nav.site a.nav-download::before {
   position: relative;
 }
 
+.split-menu[open] .menu {
+  display: flex;
+}
+
+.split-menu:not([open]) .menu {
+  display: none;
+}
+
 .split-menu summary {
   list-style: none;
   cursor: pointer;
