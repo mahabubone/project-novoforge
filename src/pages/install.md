@@ -44,9 +44,10 @@ shortcut and registers the app for auto-updates.
 
 ## Updates
 
-Installers check this site's release feed automatically. For the AppImage,
-update by simply running the new version; the Windows installer updates in
-place.
+Installers check the GitHub Releases feed automatically and prompt when a new
+version is available (Help → Check for Updates triggers a manual check). For
+the AppImage, update by simply running the new version; the Windows installer
+updates in place.
 
 ## Requirements
 

@@ -183,6 +183,18 @@ main {
   margin-top: 14px;
 }
 
+.also {
+  padding: 0 0 26px;
+}
+
+.also p {
+  font-size: 13.5px;
+  line-height: 1.7;
+  color: var(--muted);
+  border-left: 3px solid var(--edge);
+  padding-left: 14px;
+}
+
 .features {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
