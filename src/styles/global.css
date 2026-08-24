@@ -206,11 +206,18 @@ main {
 
 .feature .icon {
   font-size: 28px;
+  line-height: 1;
+}
+
+.feature-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   margin-bottom: 12px;
 }
 
 .feature h3 {
-  margin: 0 0 10px;
+  margin: 0;
   font-size: 18px;
 }
 
