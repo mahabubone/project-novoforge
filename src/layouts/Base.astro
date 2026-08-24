@@ -18,9 +18,16 @@ const base = import.meta.env.BASE_URL;
     <meta name="generator" content={Astro.generator} />
     <meta
       name="description"
-      content="Novoforge — local-first worldbuilding and long-form writing software. Your project is a folder on disk. Free for personal use."
+      content="Novoforge — local-first worldbuilding and long-form writing software. Write novels, build worlds, own your work. Free for individual authors."
     />
+    <meta property="og:title" content="Novoforge — worldbuilding & novel-writing software" />
+    <meta property="og:description" content="Write novels. Build worlds. Own everything. Local-first writing software with serious worldbuilding tools. Free for individual authors." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mahabubone.github.io/project-novoforge/" />
     <link rel="icon" type="image/svg+xml" href={`${base}favicon.svg`} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <title>{title}</title>
   </head>
   <body>
@@ -31,11 +38,10 @@ const base = import.meta.env.BASE_URL;
           Novoforge
         </a>
         <nav class="site">
+          <a href={`${base}#features`}>Features</a>
           <a href={`${base}install/`}>Install</a>
           <a href={`${base}license/`}>License</a>
-          <a href="https://github.com/mahabubone/project-novoforge/releases/latest"
-            >Downloads</a
-          >
+          <a href="https://github.com/mahabubone/project-novoforge/releases/latest">Downloads</a>
         </nav>
       </div>
     </header>

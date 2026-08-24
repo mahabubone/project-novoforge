@@ -5,82 +5,103 @@ import Base from "../layouts/Base.astro";
 <Base title="Novoforge — worldbuilding & novel-writing software">
   <section class="hero">
     <img class="logo" src={import.meta.env.BASE_URL + "favicon.svg"} alt="Novoforge" />
-    <h1>Novoforge</h1>
+    <h1>Write novels. Build worlds.<br />Own everything.</h1>
     <p class="tagline">
-      Local-first worldbuilding and long-form writing software. No accounts, no
-      cloud — your project is a folder on disk, and everything lives next to
-      it.
+      Local-first writing software with serious worldbuilding tools — a
+      distraction-free editor, entity relationship graphs, timelines, boards,
+      revision history, and Scrivener-grade compile &amp; export. All on-device.
+      No accounts, no cloud, no lock-in.
     </p>
     <div class="buttons">
       <a class="btn primary" href="https://github.com/mahabubone/project-novoforge/releases/latest">
-        Download for Linux
+        Download free for Linux
       </a>
       <a class="btn" href="https://github.com/mahabubone/project-novoforge/releases/latest">
-        Download for Windows
+        Download free for Windows
       </a>
-      <a class="btn" href={import.meta.env.BASE_URL + "install/"}>Install guide</a>
     </div>
     <p class="platforms">Linux (AppImage · deb · rpm) · Windows (NSIS) · macOS coming later</p>
+    <p class="free-note">
+      <strong>Free for individual authors</strong> — personal, non-commercial use,
+      forever.
+    </p>
   </section>
 
-  <section class="features">
+  <section class="social-proof">
+    <p>
+      For writers who outgrew flat Markdown editors and refuse to rent their
+      workflow from a subscription cloud. Your project is a folder on disk — a
+      portable <code>.world</code> bundle containing your database, assets,
+      revisions, and backups. Open it, back it up, sync it however you like.
+    </p>
+  </section>
+
+  <section class="features" id="features">
     <div class="feature">
+      <div class="icon">✒️</div>
       <h3>Manuscript</h3>
       <p>
-        Books, parts, chapters and scenes with a distraction-free editor,
-        focus mode, typewriter scrolling, scrivenings view and per-scene word
-        targets. Corkboard and outliner views, project-wide find &amp;
-        replace, and a ⌘K command palette.
+        Books, parts, chapters and scenes with a distraction-free editor, focus
+        mode, typewriter scrolling, scrivenings view and per-scene word targets.
+        Corkboard and outliner views, project-wide find &amp; replace, and a
+        ⌘K command palette.
       </p>
     </div>
     <div class="feature">
+      <div class="icon">🌍</div>
       <h3>Worldbuilding</h3>
       <p>
-        Typed entities — characters, locations, factions — with custom
-        attributes, tags, relationship graphs, timelines, calendars and family
-        trees.
+        Typed entities — characters, locations, factions, items, creatures —
+        with custom attributes, tags, relationship graphs, timelines, calendars
+        and family trees. Track everything that matters in your world.
       </p>
     </div>
     <div class="feature">
+      <div class="icon">📊</div>
+      <h3>Relationship graph</h3>
+      <p>
+        Visualize connections between characters, places and factions. Filter by
+        relationship type, trace alliances and rivalries across your story.
+      </p>
+    </div>
+    <div class="feature">
+      <div class="icon">📜</div>
       <h3>History &amp; safety</h3>
       <p>
-        Revision snapshots with diff viewing and restore, rolling auto-backup,
-        and scheduled encrypted archives to a local folder, Dropbox or S3.
+        Revision snapshots with diff viewing and restore, rolling auto-backup on
+        close, and scheduled encrypted archives to a local folder, Dropbox or S3.
       </p>
     </div>
     <div class="feature">
+      <div class="icon">📦</div>
       <h3>Compile &amp; export</h3>
       <p>
-        Reusable Scrivener-style compile formats targeting DOCX, PDF, EPUB,
-        HTML, Markdown, Shunn manuscripts and Scrivener bundles — checksummed
-        exports, with matching imports back in.
+        Reusable Scrivener-style compile formats targeting DOCX, PDF, EPUB, HTML,
+        Markdown, Shunn manuscripts and Scrivener bundles — checksummed exports,
+        with matching imports back in.
       </p>
     </div>
     <div class="feature">
-      <h3>Consistency workbench</h3>
+      <div class="icon">🎯</div>
+      <h3>Productivity</h3>
       <p>
-        Continuity scans across your manuscript and world data, with Markdown
-        reports and beta-reader exports.
-      </p>
-    </div>
-    <div class="feature">
-      <h3>Local-first</h3>
-      <p>
-        Projects are portable folders. Open them, back them up, sync them
-        however you like — they're yours.
+        Writing targets, a stats dashboard (words/day, streaks, chapter
+        lengths), readability stats, a consistency checker, series tracking,
+        project templates and name generation.
       </p>
     </div>
   </section>
 
   <section class="also">
     <p>
-      Also in the box: native desktop menus with About / Keyboard Shortcuts /
-      What's New · series tracking across projects · name generator ·
-      automatic updates from GitHub Releases.
+      <strong>Also in the box:</strong> native desktop menus with About / Keyboard
+      Shortcuts / What's New · dark &amp; light themes · recent projects with
+      auto-open · automatic updates from GitHub Reports.
     </p>
   </section>
 
   <section class="screens">
+    <h2 class="section-title">See it in action</h2>
     <div class="gallery">
       <figure>
         <img src={import.meta.env.BASE_URL + "screens/manuscript.png"} alt="Manuscript editor with outline, scrivenings and per-scene targets" loading="lazy" />
@@ -106,6 +127,17 @@ import Base from "../layouts/Base.astro";
         <img src={import.meta.env.BASE_URL + "screens/backups.png"} alt="Backup settings with Dropbox" loading="lazy" />
         <figcaption>Backups — local or Dropbox, encrypted</figcaption>
       </figure>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Ready to write?</h2>
+    <p>Download the latest release. Free for individual authors.</p>
+    <div class="buttons">
+      <a class="btn primary" href="https://github.com/mahabubone/project-novoforge/releases/latest">
+        Download Novoforge
+      </a>
+      <a class="btn" href={import.meta.env.BASE_URL + "install/"}>Install guide</a>
     </div>
   </section>
 </Base>

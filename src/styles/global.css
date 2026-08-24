@@ -46,8 +46,14 @@ body {
     Roboto, sans-serif;
   background: var(--surface);
   color: var(--text);
-  line-height: 1.6;
+  line-height: 1.65;
   -webkit-font-smoothing: antialiased;
+}
+
+/* Headings */
+:is(h1, h2, h3) {
+  font-family: "Fraunces", "Inter", ui-serif, Georgia, serif;
+  line-height: 1.1;
 }
 
 ::selection {
@@ -120,29 +126,129 @@ main {
 
 .hero {
   text-align: center;
-  padding: 90px 0 60px;
+  padding: 110px 0 70px;
 }
 
 .hero .logo {
-  width: 84px;
-  height: 84px;
-  margin-bottom: 24px;
+  width: 96px;
+  height: 96px;
+  margin-bottom: 28px;
 }
 
 .hero h1 {
-  font-size: clamp(34px, 6vw, 56px);
-  margin: 0 0 14px;
-  letter-spacing: -0.02em;
+  font-size: clamp(38px, 7vw, 68px);
+  margin: 0 0 18px;
+  letter-spacing: -0.03em;
+  font-weight: 600;
 }
 
 .hero p.tagline {
-  font-size: clamp(16px, 2.5vw, 20px);
+  font-size: clamp(16px, 2.5vw, 21px);
   color: var(--muted);
-  max-width: 640px;
-  margin: 0 auto 34px;
+  max-width: 720px;
+  margin: 0 auto 38px;
+  line-height: 1.6;
 }
 
-.buttons {
+.free-note {
+  font-size: 14px;
+  color: var(--accent-strong);
+  margin-top: 18px;
+}
+
+.social-proof {
+  padding: 0 0 40px;
+  text-align: center;
+}
+
+.social-proof p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--muted);
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.social-proof code {
+  background: var(--panel);
+  border: 1px solid var(--edge);
+  border-radius: 4px;
+  padding: 1px 6px;
+  font-size: 0.9em;
+}
+
+.section-title {
+  text-align: center;
+  font-size: clamp(26px, 4vw, 40px);
+  margin: 0 0 36px;
+  letter-spacing: -0.02em;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 18px;
+  padding: 40px 0 60px;
+}
+
+.feature {
+  background: var(--panel);
+  border: 1px solid var(--edge);
+  border-radius: var(--radius);
+  padding: 26px;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.feature:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.feature .icon {
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+.feature h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+
+.feature p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14.5px;
+  line-height: 1.65;
+}
+
+.also {
+  padding: 0 0 50px;
+}
+
+.also p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--muted);
+  border-left: 3px solid var(--accent);
+  padding-left: 16px;
+}
+
+.cta {
+  text-align: center;
+  padding: 60px 0 90px;
+}
+
+.cta h2 {
+  font-size: clamp(26px, 4vw, 40px);
+  margin: 0 0 12px;
+  letter-spacing: -0.02em;
+}
+
+.cta p {
+  color: var(--muted);
+  font-size: 17px;
+  margin: 0 0 28px;
+}
   display: flex;
   gap: 14px;
   justify-content: center;

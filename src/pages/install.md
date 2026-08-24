@@ -10,20 +10,27 @@ Novoforge ships installers for Linux and Windows. Grab the latest from the
 [releases page](https://github.com/mahabubone/project-novoforge/releases/latest).
 macOS builds are planned.
 
-## Linux
+## Quick start
+
+**Linux AppImage** (works on most distros, no install):
+
+```bash
+chmod +x Novoforge-*.AppImage
+./Novoforge-*.AppImage
+```
+
+**Windows**:
+
+Run `Novoforge-*-setup.exe` and follow the installer. It creates a desktop
+shortcut and registers the app for auto-updates.
+
+## Linux packages
 
 | Package   | Format        | Best for                          |
 | --------- | ------------- | --------------------------------- |
 | AppImage  | `.AppImage`   | Portable — no install, just run   |
 | Debian    | `.deb`        | Debian / Ubuntu / Mint            |
 | RPM       | `.rpm`        | Fedora / RHEL / openSUSE          |
-
-AppImage:
-
-```bash
-chmod +x Novoforge-*.AppImage
-./Novoforge-*.AppImage
-```
 
 Debian / Ubuntu:
 
@@ -36,11 +43,6 @@ Fedora / RHEL:
 ```bash
 sudo dnf install Novoforge-*.rpm
 ```
-
-## Windows
-
-Run `Novoforge-*-setup.exe` and follow the installer. It creates a desktop
-shortcut and registers the app for auto-updates.
 
 ## Updates
 
