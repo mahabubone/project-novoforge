@@ -1,0 +1,61 @@
+---
+import Base from "../layouts/Base.astro";
+import changelog from "../data/changelog.json";
+---
+
+<Base title="Changelog — Novoforge">
+  <section class="changelog">
+    <header class="changelog-head">
+      <h1>Changelog</h1>
+      <p>What's new in each release, built from the project's commit history.</p>
+    </header>
+
+    {
+      changelog.map((v) => (
+        <article class="version-block">
+          <div class="version-head">
+            <span class="version-badge">{v.version}</span>
+            <time>{v.date}</time>
+          </div>
+
+          {v.features.length > 0 && (
+            <div class="entry-group">
+              <h3 class="entry-title new">New</h3>
+              <ul>
+                {v.features.map((f) => (
+                  <li set:html={f} />
+                ))}
+              </ul>
+            </div>
+          )}
+
+          {v.improvements.length > 0 && (
+            <div class="entry-group">
+              <h3 class="entry-title improved">Improved</h3>
+              <ul>
+                {v.improvements.map((f) => (
+                  <li set:html={f} />
+                ))}
+              </ul>
+            </div>
+          )}
+
+          {v.fixes.length > 0 && (
+            <div class="entry-group">
+              <h3 class="entry-title fixed">Fixed</h3>
+              <ul>
+                {v.fixes.map((f) => (
+                  <li set:html={f} />
+                ))}
+              </ul>
+            </div>
+          )}
+
+          {v.features.length === 0 && v.fixes.length === 0 && v.improvements.length === 0 && (
+            <p class="empty">Maintenance release.</p>
+          )}
+        </article>
+      ))
+    }
+  </section>
+</Base>
