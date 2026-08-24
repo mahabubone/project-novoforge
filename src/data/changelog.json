@@ -11,7 +11,15 @@
   {
     "version": "v1.0.0-beta.1",
     "date": "2026-08-24",
+    "features": [],
+    "fixes": [],
+    "improvements": []
+  },
+  {
+    "version": "v1.0.0",
+    "date": "2026-08-24",
     "features": [
+      "enable macOS DMG builds + fix app icon",
       "native application menu, About/Shortcuts/What's New dialogs, quit-path hardening (independent steps + GPU-off + diagnostics)",
       "compile engine v2 (per-section layouts/filters) + trim targets to md/docx/shunn/scriv/html/pdf/epub",
       "corkboard/outliner views, find & replace, scene breaks, section types + migrations 0012-0013"
