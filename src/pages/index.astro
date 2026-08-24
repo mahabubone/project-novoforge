@@ -278,4 +278,14 @@ import Base from "../layouts/Base.astro";
             </div>
         </section>
     </section>
+    <script>
+      document.addEventListener("click", (e) => {
+        const dropdowns = document.querySelectorAll(".dropdown");
+        dropdowns.forEach((d) => {
+          if (!d.contains(e.target)) d.removeAttribute("open");
+        });
+        const link = e.target.closest(".dropdown .menu a");
+        if (link) link.closest(".dropdown")?.removeAttribute("open");
+      });
+    </script>
 </Base>
