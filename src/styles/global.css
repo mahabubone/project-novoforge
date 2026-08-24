@@ -433,6 +433,8 @@ nav.site a.nav-download::before {
 .split .caret {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+  border-top-right-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
   border-left: 1px solid rgba(245,158,11,0.35);
   padding: 0 10px;
   height: 100%;
