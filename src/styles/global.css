@@ -434,7 +434,8 @@ nav.site a.nav-download::before {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   border-left: 1px solid rgba(245,158,11,0.35);
-  padding: 12px 10px;
+  padding: 0 10px;
+  height: 100%;
   display: inline-flex;
   align-items: center;
   justify-content: center;
