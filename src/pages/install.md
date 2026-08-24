@@ -2,14 +2,25 @@
 layout: ../layouts/Base.astro
 title: Install — Novoforge
 docs: true
-description: How to install Novoforge on Linux and Windows. Download AppImage, deb, rpm, or NSIS setup. Works offline, free for personal use.
+description: How to install Novoforge on Linux, Windows, and macOS. Download AppImage, deb, rpm, NSIS, or DMG. Works offline, free for personal use.
 ---
 
 # Install
 
-Novoforge ships installers for Linux and Windows. Grab the latest from the
+Novoforge ships installers for Linux, Windows and macOS. Grab the latest from the
 [releases page](https://github.com/mahabubone/project-novoforge/releases/latest).
-macOS builds are planned.
+
+## macOS
+
+The macOS build is a `.dmg` disk image. It is **unsigned** (no Apple Developer
+account), so Gatekeeper will block it on first launch. To open it:
+
+1. Open the `.dmg` and drag Novoforge into **Applications**.
+2. Right-click (or Control-click) the app and choose **Open**.
+3. Click **Open** in the confirmation dialog.
+
+Or, after the first blocked launch, go to **System Settings → Privacy & Security**
+and click **Open Anyway**.
 
 ## Quick start
 
@@ -54,5 +65,5 @@ updates in place.
 
 ## Requirements
 
-64-bit Linux or Windows, ~500 MB disk space. Works offline after download —
+64-bit Linux, Windows or macOS, ~500 MB disk space. Works offline after download —
 your data never leaves your machine.
