@@ -394,7 +394,9 @@ nav.site a.nav-download::before {
 }
 
 .btn {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   padding: 12px 22px;
   border-radius: var(--radius);
   font-weight: 600;
@@ -407,6 +409,80 @@ nav.site a.nav-download::before {
 .btn:hover {
   text-decoration: none;
   border-color: var(--muted);
+}
+
+.btn .ic {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.split {
+  display: inline-flex;
+  align-items: center;
+}
+
+.split .btn.primary:first-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.split .caret {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left: 1px solid rgba(245,158,11,0.3);
+  padding: 12px 14px;
+}
+
+.split-menu {
+  position: relative;
+}
+
+.split-menu summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+.split-menu summary::-webkit-details-marker {
+  display: none;
+}
+
+.split-menu .menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  min-width: 240px;
+  background: var(--panel);
+  border: 1px solid var(--edge);
+  border-radius: var(--radius);
+  padding: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  z-index: 20;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+}
+
+.split-menu .menu a {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 10px 12px;
+  border-radius: 6px;
+  color: var(--text);
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.split-menu .menu a:hover {
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
+}
+
+.split-menu .menu .sub {
+  color: var(--muted);
+  font-weight: 400;
+  font-size: 12px;
 }
 
 .btn.primary {
@@ -588,3 +664,8 @@ article.docs pre code[class*="language-"],
 .astro-code {
   background: var(--panel) !important;
 }
+
+.margin-vertical { margin: 16px 0; }
+.margin-vertical-3x { margin: 3rem 0; }
+
+.d-block { display: block;}
