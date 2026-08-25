@@ -1,5 +1,14 @@
 [
   {
+    "version": "v1.0.2",
+    "date": "2026-08-25",
+    "features": [],
+    "fixes": [
+      "App now launches on systems whose GPU/Vulkan/GL stack crashes the Chromium GPU process — the GPU process is fully disabled so it can no longer abort startup before the window appears"
+    ],
+    "improvements": []
+  },
+  {
     "version": "v1.0.1",
     "date": "2026-08-25",
     "features": [],
