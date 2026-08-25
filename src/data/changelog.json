@@ -4,7 +4,8 @@
     "date": "2026-08-25",
     "features": [],
     "fixes": [
-      "App now launches on systems with a missing or broken GPU/Vulkan/GL driver — the GPU process uses bundled SwiftShader software rendering so a driver crash can no longer abort startup before the window appears"
+      "App now launches on systems with a missing or broken GPU/Vulkan/GL driver — the GPU process uses bundled SwiftShader software rendering so a driver crash can no longer abort startup before the window appears",
+      "Main window now always appears on Wayland — it is shown/focused on ready-to-show with a guaranteed fallback so the compositor can't leave it invisible"
     ],
     "improvements": []
   },
