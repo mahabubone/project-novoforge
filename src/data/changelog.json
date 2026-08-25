@@ -1,5 +1,14 @@
 [
   {
+    "version": "v1.0.3",
+    "date": "2026-08-25",
+    "features": [],
+    "fixes": [
+      "App now launches on systems with a missing or broken GPU/Vulkan/GL driver — the GPU process uses bundled SwiftShader software rendering so a driver crash can no longer abort startup before the window appears"
+    ],
+    "improvements": []
+  },
+  {
     "version": "v1.0.2",
     "date": "2026-08-25",
     "features": [],
