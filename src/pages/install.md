@@ -53,17 +53,41 @@ sudo apt install ./Novoforge-*.deb
 Fedora / RHEL:
 
 ```bash
-sudo dnf install Novoforge-*.rpm
+sudo dnf install ./Novoforge-*.rpm
 ```
+
+> Prefer `apt`/`dnf` over `dpkg -i`/`rpm -i`: the package managers resolve the
+> required system libraries automatically, while the low-level tools leave a
+> half-installed package if any are missing.
+
+## Uninstall
+
+Debian / Ubuntu:
+
+```bash
+sudo apt remove novoforge
+```
+
+Fedora / RHEL:
+
+```bash
+sudo dnf remove novoforge
+```
+
+AppImage: just delete the `.AppImage` file. Your projects are plain folders on
+disk and are never touched by uninstalling.
 
 ## Updates
 
-Installers check the GitHub Releases feed automatically and prompt when a new
-version is available (Help → Check for Updates triggers a manual check). For
-the AppImage, update by simply running the new version; the Windows installer
-updates in place.
+All installers check the GitHub Releases feed and notify you when a new
+version is available (Help → Check for Updates triggers a manual check).
+
+- **Windows** — updates install in place.
+- **AppImage** — download the new version and run it (replace the old file).
+- **deb / rpm** — you'll be pointed to the new installer; download and install
+  it with the commands above.
 
 ## Requirements
 
-64-bit Linux, Windows or macOS, ~500 MB disk space. Works offline after download —
-your data never leaves your machine.
+64-bit Linux, Windows or macOS. ~300 MB installed. Works offline after
+download — your data never leaves your machine.

@@ -1,5 +1,17 @@
 [
   {
+    "version": "v1.0.1",
+    "date": "2026-08-25",
+    "features": [],
+    "fixes": [
+      "Linux app icon now displays correctly across desktop environments — replaced the 16-bit color PNG with a standard 8-bit icon set in all sizes (16–1024 px)",
+      "Windows installer icon regenerated with proper multi-resolution 8-bit layers"
+    ],
+    "improvements": [
+      "Install guide: added uninstall instructions and clarified per-platform update behavior"
+    ]
+  },
+  {
     "version": "v1.0.0",
     "date": "2026-08-24",
     "features": [

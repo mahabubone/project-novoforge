@@ -33,6 +33,7 @@ Grab the latest version for your system from the
 | **Linux** (Debian/Ubuntu) | `Novoforge-<version>.deb` |
 | **Linux** (Fedora/RHEL) | `Novoforge-<version>.rpm` |
 | **Linux** (any distro) | `Novoforge-<version>.AppImage` |
+| **macOS** | `Novoforge-<version>-mac.dmg` |
 
 The first run asks you to create or open a project folder. That folder *is*
 your project — keep it backed up and you keep your novel.
